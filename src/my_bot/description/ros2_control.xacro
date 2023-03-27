@@ -92,6 +92,7 @@
     </ros2_control>
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"> 
+            <self_collide>1</self_collide>
             <!-- <robot_param>robot_description</robot_param>
             <robot_param_node>robot_state_publisher</robot_param_node> -->
             <parameters>$(find my_bot)/config/mobile_manipulators.yaml</parameters>

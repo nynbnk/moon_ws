@@ -23,6 +23,7 @@
     </link>
     <gazebo reference="mnp_base_link">
         <material>Gazebo/Blue</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_base_joint" type="revolute">
         <origin xyz="1.5 0.0 .5" rpy="0.0 0.0 0.0"/>
@@ -53,6 +54,7 @@
     </link>
     <gazebo reference="mnp_first_link">
         <material>Gazebo/Grey</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_first_joint" type="continuous">
         <origin xyz="0 0.0 0.15" rpy="0.0 0.0 0.0"/>
@@ -83,6 +85,7 @@
     </link>
     <gazebo reference="mnp_second_link">
         <material>Gazebo/White</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_second_joint" type="continuous">
         <origin xyz="0 0.05 1" rpy="0.0 0.0 0.0"/>
@@ -114,6 +117,7 @@
     </link>
     <gazebo reference="mnp_third_link">
         <material>Gazebo/Black</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_third_joint" type="continuous">
         <origin xyz="0 0.05 .75" rpy="0.0 0.0 0.0"/>
@@ -145,6 +149,7 @@
     </link>
     <gazebo reference="mnp_ee_base_link">
         <material>Gazebo/Blue</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_ee_base_joint" type="fixed">
         <origin xyz="0 0.0 .45" rpy="0.0 0 0.0"/>
@@ -174,6 +179,7 @@
     </link>
     <gazebo reference="mnp_left_gripper_link">
         <material>Gazebo/Green</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_left_gripper_joint" type="prismatic">
         <origin xyz="0 -0.075 0.05" rpy="0.0 0.0 0.0"/>
@@ -204,6 +210,7 @@
     </link>
     <gazebo reference="mnp_right_gripper_link">
         <material>Gazebo/Green</material>
+        <self_collide>1</self_collide>
     </gazebo>
     <joint name="mnp_right_gripper_joint" type="prismatic">
         <origin xyz="0 0.075 .05" rpy="0.0 0.0 0.0"/>
