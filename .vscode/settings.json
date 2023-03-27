@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nayan/ros2_ws/build/my_pkg",
+        "/home/nayan/ros2_ws/install/my_pkg/lib/python3.10/site-packages",
+        "/home/nayan/final_ws/build/robot",
+        "/home/nayan/final_ws/install/robot/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nayan/ros2_ws/build/my_pkg",
+        "/home/nayan/ros2_ws/install/my_pkg/lib/python3.10/site-packages",
+        "/home/nayan/final_ws/build/robot",
+        "/home/nayan/final_ws/install/robot/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

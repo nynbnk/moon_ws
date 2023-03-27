@@ -1,0 +1,36 @@
+[0.111s] Invoking command in '/home/nayan/nasa_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --build /home/nayan/nasa_ws/build/my_bot -- -j8 -l8
+[0.528s] Invoked command in '/home/nayan/nasa_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --build /home/nayan/nasa_ws/build/my_bot -- -j8 -l8
+[0.615s] Invoking command in '/home/nayan/nasa_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --install /home/nayan/nasa_ws/build/my_bot
+[0.644s] -- Install configuration: ""
+[0.645s] -- Execute custom install script
+[0.645s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/config/gripper_controller.yaml
+[0.646s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/config/mobile_manipulators.yaml
+[0.646s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro
+[0.647s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro
+[0.647s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/manipulator.xacro
+[0.647s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/robot.core.xacro
+[0.647s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[0.648s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/ros2_control.xacro
+[0.648s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/test.mimic.ros2_control.xacro
+[0.648s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/test.mimic.xacro
+[0.648s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/description/test_gripper_mimic_joint.xacro
+[0.649s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/launch/core.launch.py
+[0.649s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/launch/gripper.test.launch.py
+[0.649s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/launch/robot.launch.py
+[0.649s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/launch/test.launch.py
+[0.650s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[0.650s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[0.650s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[0.651s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[0.651s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/environment/path.sh
+[0.651s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/environment/path.dsv
+[0.652s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/local_setup.bash
+[0.652s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/local_setup.sh
+[0.652s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/local_setup.zsh
+[0.653s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/local_setup.dsv
+[0.653s] -- Symlinking: /home/nayan/nasa_ws/install/my_bot/share/my_bot/package.dsv
+[0.657s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[0.657s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[0.658s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[0.658s] -- Up-to-date symlink: /home/nayan/nasa_ws/install/my_bot/share/my_bot/package.xml
+[0.667s] Invoked command in '/home/nayan/nasa_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --install /home/nayan/nasa_ws/build/my_bot

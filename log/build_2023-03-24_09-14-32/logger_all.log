@@ -1,0 +1,195 @@
+[0.785s] DEBUG:colcon:Command line arguments: ['/home/nayan/.local/bin/colcon', 'build', '--symlink-install']
+[0.785s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f64740a78b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f64740a7340>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f64740a7340>>)
+[0.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.823s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.823s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nayan/nasa_ws'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore_ament_install'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_pkg']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_pkg'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_meta']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_meta'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ros']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ros'
+[0.840s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_bot' with type 'ros.ament_cmake' and name 'my_bot'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extension 'ignore'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extension 'ignore_ament_install'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extensions ['colcon_pkg']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extension 'colcon_pkg'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extensions ['colcon_meta']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extension 'colcon_meta'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extensions ['ros']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/rqt_joint_trajectory_controller) by extension 'ros'
+[0.843s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rqt_joint_trajectory_controller' with type 'ros.ament_python' and name 'rqt_joint_trajectory_controller'
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.902s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/nayan/final_ws/install
+[0.908s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/nayan/ros2_ws/install
+[0.914s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/nayan/artico_ws/install
+[0.920s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 379 installed packages in /opt/ros/humble
+[0.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_args' from command line to 'None'
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target' from command line to 'None'
+[1.033s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_first' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_force_configure' from command line to 'False'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'ament_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[1.034s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.034s] DEBUG:colcon.colcon_core.verb:Building package 'my_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nayan/nasa_ws/build/my_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nayan/nasa_ws/install/my_bot', 'merge_install': False, 'path': '/home/nayan/nasa_ws/src/my_bot', 'symlink_install': True, 'test_result_base': None}
+[1.046s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'cmake_args' from command line to 'None'
+[1.046s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'cmake_target' from command line to 'None'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.047s] Level 5:colcon.colcon_core.verb:set package 'rqt_joint_trajectory_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.047s] DEBUG:colcon.colcon_core.verb:Building package 'rqt_joint_trajectory_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller', 'merge_install': False, 'path': '/home/nayan/nasa_ws/src/rqt_joint_trajectory_controller', 'symlink_install': True, 'test_result_base': None}
+[1.050s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.071s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.072s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nayan/nasa_ws/src/my_bot' with build type 'ament_cmake'
+[1.072s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nayan/nasa_ws/src/my_bot'
+[1.085s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.085s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.085s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.119s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nayan/nasa_ws/src/rqt_joint_trajectory_controller' with build type 'ament_python'
+[1.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('rqt_joint_trajectory_controller', 'ament_prefix_path')
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/ament_prefix_path.ps1'
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/ament_prefix_path.dsv'
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/ament_prefix_path.sh'
+[1.142s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.142s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nayan/nasa_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --build /home/nayan/nasa_ws/build/my_bot -- -j8 -l8
+[1.557s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nayan/nasa_ws/src/rqt_joint_trajectory_controller'
+[1.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nayan/nasa_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --build /home/nayan/nasa_ws/build/my_bot -- -j8 -l8
+[1.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nayan/nasa_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --install /home/nayan/nasa_ws/build/my_bot
+[1.740s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_bot)
+[1.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nayan/nasa_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nayan/final_ws/install/rqt_joint_trajectory_controller:/home/nayan/ros2_ws/install/my_pkg:/home/nayan/final_ws/install/robot:/opt/ros/humble /home/nayan/.local/bin/cmake --install /home/nayan/nasa_ws/build/my_bot
+[1.753s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot' for CMake module files
+[1.754s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot' for CMake config files
+[1.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'cmake_prefix_path')
+[1.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/my_bot/share/my_bot/hook/cmake_prefix_path.ps1'
+[1.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nayan/nasa_ws/install/my_bot/share/my_bot/hook/cmake_prefix_path.dsv'
+[1.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/my_bot/share/my_bot/hook/cmake_prefix_path.sh'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/bin'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/lib/pkgconfig/my_bot.pc'
+[1.765s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/lib/python3.10/site-packages'
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/bin'
+[1.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.ps1'
+[1.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.dsv'
+[1.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.sh'
+[1.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.bash'
+[1.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.zsh'
+[1.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nayan/nasa_ws/install/my_bot/share/colcon-core/packages/my_bot)
+[1.835s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_bot)
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot' for CMake module files
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot' for CMake config files
+[1.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'cmake_prefix_path')
+[1.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/my_bot/share/my_bot/hook/cmake_prefix_path.ps1'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nayan/nasa_ws/install/my_bot/share/my_bot/hook/cmake_prefix_path.dsv'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/my_bot/share/my_bot/hook/cmake_prefix_path.sh'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/bin'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/lib/pkgconfig/my_bot.pc'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/lib/python3.10/site-packages'
+[1.859s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/my_bot/bin'
+[1.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.ps1'
+[1.868s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.dsv'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.sh'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.bash'
+[1.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/my_bot/share/my_bot/package.zsh'
+[1.870s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nayan/nasa_ws/install/my_bot/share/colcon-core/packages/my_bot)
+[2.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller': PYTHONPATH=/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/prefix_override:/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/build --no-deps install_data
+[2.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('rqt_joint_trajectory_controller', 'pythonpath_develop')
+[2.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller' returned '0': PYTHONPATH=/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/prefix_override:/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/build --no-deps install_data
+[2.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/pythonpath_develop.ps1'
+[2.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/pythonpath_develop.dsv'
+[2.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/pythonpath_develop.sh'
+[2.778s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller' for CMake module files
+[2.779s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller' for CMake config files
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib'
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/bin'
+[2.781s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/pkgconfig/rqt_joint_trajectory_controller.pc'
+[2.781s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages'
+[2.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('rqt_joint_trajectory_controller', 'pythonpath')
+[2.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/pythonpath.ps1'
+[2.800s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/pythonpath.dsv'
+[2.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/hook/pythonpath.sh'
+[2.802s] Level 1:colcon.colcon_core.environment:checking '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/bin'
+[2.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rqt_joint_trajectory_controller)
+[2.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/package.ps1'
+[2.819s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/package.dsv'
+[2.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/package.sh'
+[2.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/package.bash'
+[2.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/package.zsh'
+[2.822s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/share/colcon-core/packages/rqt_joint_trajectory_controller)
+[2.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.823s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.851s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.852s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.852s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.881s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.896s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nayan/nasa_ws/install/local_setup.ps1'
+[2.898s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nayan/nasa_ws/install/_local_setup_util_ps1.py'
+[2.900s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nayan/nasa_ws/install/setup.ps1'
+[2.914s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nayan/nasa_ws/install/local_setup.sh'
+[2.915s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nayan/nasa_ws/install/_local_setup_util_sh.py'
+[2.916s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nayan/nasa_ws/install/setup.sh'
+[2.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nayan/nasa_ws/install/local_setup.bash'
+[2.925s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nayan/nasa_ws/install/setup.bash'
+[2.936s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nayan/nasa_ws/install/local_setup.zsh'
+[2.937s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nayan/nasa_ws/install/setup.zsh'

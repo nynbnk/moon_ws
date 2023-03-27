@@ -1,0 +1,17 @@
+[1.011s] Invoking command in '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller': PYTHONPATH=/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/prefix_override:/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/build --no-deps install_data
+[1.383s] running develop
+[1.639s] running egg_info
+[1.639s] writing rqt_joint_trajectory_controller.egg-info/PKG-INFO
+[1.640s] writing dependency_links to rqt_joint_trajectory_controller.egg-info/dependency_links.txt
+[1.640s] writing entry points to rqt_joint_trajectory_controller.egg-info/entry_points.txt
+[1.640s] writing requirements to rqt_joint_trajectory_controller.egg-info/requires.txt
+[1.640s] writing top-level names to rqt_joint_trajectory_controller.egg-info/top_level.txt
+[1.643s] reading manifest file 'rqt_joint_trajectory_controller.egg-info/SOURCES.txt'
+[1.646s] writing manifest file 'rqt_joint_trajectory_controller.egg-info/SOURCES.txt'
+[1.647s] running build_ext
+[1.648s] Creating /home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages/rqt-joint-trajectory-controller.egg-link (link to .)
+[1.649s] Installing rqt_joint_trajectory_controller script to /home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/rqt_joint_trajectory_controller
+[1.649s] 
+[1.649s] Installed /home/nayan/nasa_ws/build/rqt_joint_trajectory_controller
+[1.650s] running install_data
+[1.699s] Invoked command in '/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller' returned '0': PYTHONPATH=/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/prefix_override:/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/nayan/nasa_ws/build/rqt_joint_trajectory_controller/build --no-deps install_data

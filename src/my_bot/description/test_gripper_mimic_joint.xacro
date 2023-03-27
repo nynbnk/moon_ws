@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="grip_bot">
+    
+    <xacro:include filename="$(find my_bot)/description/test.mimic.xacro"/>
+
+    <xacro:include filename="$(find my_bot)/description/test.mimic.ros2_control.xacro"/>
+</robot>

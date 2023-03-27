@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <xacro:include filename="$(find my_bot)/description/inertial_macros.xacro"/>
+
+    <link name="mnp_base_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.075" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.2" length="0.15"/>
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.075" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.2" length="0.15"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="2" radius="0.2" length="0.15">
+            <origin xyz="0.0 0.0 0.075" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_cylinder>
+    </link>
+    <gazebo reference="mnp_base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <joint name="mnp_base_joint" type="revolute">
+        <origin xyz="1.5 0.0 .5" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="mnp_base_link"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="0" upper="0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+<!-- First Link -->
+    <link name="mnp_first_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.05 1"/>
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.05 1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="2" x="0.1" y="0.05" z="1" >
+            <origin xyz="0.0 0.0 0.5" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="mnp_first_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <joint name="mnp_first_joint" type="continuous">
+        <origin xyz="0 0.0 0.15" rpy="0.0 0.0 0.0"/>
+        <parent link="mnp_base_link"/>
+        <child link="mnp_first_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="-1.57" upper="1.57" effort="5" velocity="0.5"/>
+        <dynamics damping="0.7"/>
+    </joint>
+<!-- Second Link -->
+    <link name="mnp_second_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.35" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.05 0.75"/>
+            </geometry>
+            <material name="green" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.35" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.05 0.75"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="1" x="0.1" y="0.05" z="0.75" >
+            <origin xyz="0.0 0.0 0.35" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="mnp_second_link">
+        <material>Gazebo/White</material>
+    </gazebo>
+    <joint name="mnp_second_joint" type="continuous">
+        <origin xyz="0 0.05 1" rpy="0.0 0.0 0.0"/>
+        <parent link="mnp_first_link"/>
+        <child link="mnp_second_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="-1.57" upper="1.57" effort="5" velocity="0.5"/>
+        <dynamics damping="0.7"/>
+    </joint>
+
+    <!-- Third Link -->
+    <link name="mnp_third_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.2" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.05 0.5"/>
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.2" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.05 0.5"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="0.1" y="0.05" z="0.5" >
+            <origin xyz="0.0 0.0 0.2" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="mnp_third_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    <joint name="mnp_third_joint" type="continuous">
+        <origin xyz="0 0.05 .75" rpy="0.0 0.0 0.0"/>
+        <parent link="mnp_second_link"/>
+        <child link="mnp_third_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="-1.5707" upper="1.5707" effort="5" velocity="0.5"/>
+        <dynamics damping="0.7"/>
+    </joint>
+    
+    <!-- End Effector -->
+    <link name="mnp_ee_base_link">
+        <visual>
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.05 0.2 0.05"/>
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.05 0.2 0.05"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.15" x="0.05" y="0.2" z="0.05" >
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="mnp_ee_base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <joint name="mnp_ee_base_joint" type="fixed">
+        <origin xyz="0 0.0 .45" rpy="0.0 0 0.0"/>
+        <parent link="mnp_third_link"/>
+        <child link="mnp_ee_base_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+<!-- left_gripper_hand -->
+    <link name="mnp_left_gripper_link">
+        <visual>
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.025 0.015 0.1"/>
+            </geometry>
+            <material name="red" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.025 0.015 0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.05" x="0.025" y="0.015" z="0.1" >
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="mnp_left_gripper_link">
+        <material>Gazebo/Green</material>
+    </gazebo>
+    <joint name="mnp_left_gripper_joint" type="prismatic">
+        <origin xyz="0 -0.075 0.05" rpy="0.0 0.0 0.0"/>
+        <parent link="mnp_ee_base_link"/>
+        <child link="mnp_left_gripper_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+<!-- right_gripper_hand -->
+    <link name="mnp_right_gripper_link">
+        <visual>
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.025 0.015 0.1"/>
+            </geometry>
+            <material name="red" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.025 0.015 0.1"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.05" x="0.025" y="0.015" z="0.1" >
+            <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_box>
+    </link>
+    <gazebo reference="mnp_right_gripper_link">
+        <material>Gazebo/Green</material>
+    </gazebo>
+    <joint name="mnp_right_gripper_joint" type="prismatic">
+        <origin xyz="0 0.075 .05" rpy="0.0 0.0 0.0"/>
+        <parent link="mnp_ee_base_link"/>
+        <child link="mnp_right_gripper_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="0" upper="0.0" effort="0.0" velocity="0.0"/>
+    </joint>
+
+
+</robot>

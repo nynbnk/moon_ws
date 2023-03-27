@@ -1,0 +1,1 @@
+/home/nayan/nasa_ws/src/my_bot/launch/gripper.test.launch.py
