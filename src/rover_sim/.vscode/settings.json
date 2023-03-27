@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nayan/final_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller",
+        "/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/nayan/ros2_ws/build/my_pkg",
+        "/home/nayan/ros2_ws/install/my_pkg/lib/python3.10/site-packages",
+        "/home/nayan/final_ws/build/robot",
+        "/home/nayan/final_ws/install/robot/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nayan/final_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/nayan/nasa_ws/build/rqt_joint_trajectory_controller",
+        "/home/nayan/nasa_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages",
+        "/home/nayan/ros2_ws/build/my_pkg",
+        "/home/nayan/ros2_ws/install/my_pkg/lib/python3.10/site-packages",
+        "/home/nayan/final_ws/build/robot",
+        "/home/nayan/final_ws/install/robot/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

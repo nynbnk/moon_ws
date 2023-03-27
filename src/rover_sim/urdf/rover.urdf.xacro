@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rover">
+
+	<xacro:include filename="$(find rover_sim)/urdf/macros.xacro"/>
+	<xacro:include filename="$(find rover_sim)/urdf/properties.xacro"/>
+    <!-- <xacro:include filename="$(find rover_sim)/urdf/rover.gazebo.xacro"/> -->
+    <xacro:include filename="$(find rover_sim)/urdf/chassis.xacro"/>
+    <xacro:include filename="$(find rover_sim)/urdf/wheel.xacro"/>
+    <xacro:include filename="$(find rover_sim)/urdf/left_wheel_group.xacro"/>
+    <xacro:include filename="$(find rover_sim)/urdf/right_wheel_group.xacro"/>
+    <xacro:include filename="$(find rover_sim)/urdf/arm.xacro"/>
+    <xacro:include filename="$(find rover_sim)/urdf/sensors.xacro"/>
+
+
+    <xacro:left_wheel_tree /> 
+    <xacro:right_wheel_tree />
+    <xacro:arm />
+    <xacro:sensors />
+
+</robot>

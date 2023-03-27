@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <arg name="paused" default="true"/>
+	<arg name="use_sim_time" default="true"/>
+	<arg name="gui" default="true"/>
+	<arg name="headless" default="false"/>
+	<arg name="debug" default="false"/>
+	<arg name="verbose" default="true" />
+    <arg name="world" default="$(find-pkg-share rover_sim)/worlds/mars_curiosity.world"/>
+
+    <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
+		<arg name="world_name" value="$(var world)"/>
+		<arg name="debug" value="$(var debug)" />
+		<arg name="gui" value="$(var gui)" />
+		<arg name="paused" value="$(var paused)"/>
+		<arg name="use_sim_time" value="$(var use_sim_time)"/>
+		<arg name="headless" value="$(var headless)"/>
+		<arg name="verbose" value="$(var verbose)" />
+    </include>
+</launch>
