@@ -25,12 +25,9 @@ endif()
 
 install(
   DIRECTORY 
-    config
     launch
     meshes
     models
-    rviz
-    scripts
     urdf
     worlds
   DESTINATION 
