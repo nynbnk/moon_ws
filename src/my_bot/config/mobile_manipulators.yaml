@@ -68,6 +68,7 @@ skid_cont:
 position_trajectory_controller:
   ros__parameters:
     joints:
+      - mnp_base_joint      
       - mnp_first_joint
       - mnp_second_joint
       - mnp_third_joint
