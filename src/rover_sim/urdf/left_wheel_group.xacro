@@ -74,7 +74,7 @@
 		<joint_properties damping="${suspension_damping}" friction="${suspension_friction}"/>
 	</joint>
 
-	<transmission name="suspension_arm_F_L_trans">
+	<!-- <transmission name="suspension_arm_F_L_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="suspension_arm_F_L_joint">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -83,7 +83,7 @@
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-    </transmission>
+    </transmission> -->
 
   	<link name='suspension_arm_B_L'>
 		<collision>
@@ -120,7 +120,7 @@
 		<joint_properties damping="${suspension_damping}" friction="${suspension_friction}"/>
 	</joint>
 
-	<transmission name="suspension_arm_B_L_trans">
+	<!-- <transmission name="suspension_arm_B_L_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="suspension_arm_B_L_joint">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -129,7 +129,7 @@
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-    </transmission>
+    </transmission> -->
 
 
  	<link name='suspension_arm_B_L_to_B2_L'>
@@ -194,7 +194,7 @@
 		<joint_properties damping="${suspension_damping}" friction="${suspension_friction}"/>
 	</joint>
 
-	<transmission name="suspension_arm_B2_L_trans">
+	<!-- <transmission name="suspension_arm_B2_L_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="suspension_arm_B2_L_joint">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -203,7 +203,7 @@
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-    </transmission>
+    </transmission> -->
 
 
 	<!-- FRONT WHEEL -->
@@ -268,7 +268,7 @@
         <axis xyz="0 0 1"/>
 	</joint>
 
-	<transmission name="suspension_steer_F_L_trans">
+	<!-- <transmission name="suspension_steer_F_L_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="suspension_steer_F_L_joint">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -277,7 +277,7 @@
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-    </transmission>
+    </transmission> -->
 
 	<link name='suspension_steer_F_L_to_front_wheel_L'>
 		<inertial>
@@ -414,7 +414,7 @@
         <axis xyz="0 0 1"/>
 	</joint>
 
-	<transmission name="suspension_steer_B_L_trans">
+	<!-- <transmission name="suspension_steer_B_L_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="suspension_steer_B_L_joint">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -423,7 +423,7 @@
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-    </transmission>
+    </transmission> -->
 
 
   	<link name='suspension_steer_B_L_to_back_wheel_L'>

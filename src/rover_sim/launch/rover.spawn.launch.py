@@ -28,11 +28,11 @@ def generate_launch_description():
                         executable='spawn_entity.py',
                         arguments=['-topic', 'robot_description', '-entity', 'my_rover', '-x', '0', '-y', '0', '-z', '2'], output='screen')
     
-    node_joint_state_publisher = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        output='screen',
-    )
+    # node_joint_state_publisher = Node(
+    #     package='joint_state_publisher_gui',
+    #     executable='joint_state_publisher_gui',
+    #     output='screen',
+    # )
     
 
     # skid_cont_spawner = Node(
@@ -41,17 +41,17 @@ def generate_launch_description():
     #     arguments=["skid_cont"],
     # )
 
-    # joint_broad_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["joint_broad"],
-    # )
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_broad"],
+    )
 
-    # traj_cont = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["joint_traj_cont"],
-    # )
+    traj_cont = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["position_trajectory_controller"],
+    )
 
 
-    return LaunchDescription([rsp, node_joint_state_publisher, gazebo, spawn_entity]) #skid_cont_spawner, traj_cont, joint_broad_spawner])
+    return LaunchDescription([rsp, gazebo, spawn_entity, traj_cont, joint_broad_spawner]) #node_joint_state_publisher, skid_cont_spawner, traj_cont, joint_broad_spawner])

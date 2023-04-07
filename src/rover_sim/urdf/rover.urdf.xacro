@@ -3,7 +3,7 @@
 
 	<xacro:include filename="$(find rover_sim)/urdf/macros.xacro"/>
 	<xacro:include filename="$(find rover_sim)/urdf/properties.xacro"/>
-    <!-- <xacro:include filename="$(find rover_sim)/urdf/rover.gazebo.xacro"/> -->
+    <xacro:include filename="$(find rover_sim)/urdf/rover.gazebo.xacro"/>
     <xacro:include filename="$(find rover_sim)/urdf/chassis.xacro"/>
     <xacro:include filename="$(find rover_sim)/urdf/wheel.xacro"/>
     <xacro:include filename="$(find rover_sim)/urdf/left_wheel_group.xacro"/>

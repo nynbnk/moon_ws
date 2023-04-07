@@ -49,7 +49,7 @@
         <joint_properties damping="0.0" friction="0.0"/>
 	</joint>
 
-    <transmission name="${wheel_name}_trans">
+    <!-- <transmission name="${wheel_name}_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="${wheel_name}_joint">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
@@ -58,7 +58,7 @@
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
-    </transmission>
+    </transmission> -->
 
   </xacro:macro>
 
