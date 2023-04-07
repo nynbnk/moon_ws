@@ -35,11 +35,11 @@ def generate_launch_description():
     # )
     
 
-    # skid_cont_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner",
-    #     arguments=["skid_cont"],
-    # )
+    skid_cont_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["skid_cont"],
+    )
 
     joint_broad_spawner = Node(
         package="controller_manager",
@@ -54,4 +54,4 @@ def generate_launch_description():
     )
 
 
-    return LaunchDescription([rsp, gazebo, spawn_entity, traj_cont, joint_broad_spawner]) #node_joint_state_publisher, skid_cont_spawner, traj_cont, joint_broad_spawner])
+    return LaunchDescription([rsp, gazebo, spawn_entity, skid_cont_spawner, traj_cont, joint_broad_spawner]) #node_joint_state_publisher,  traj_cont, joint_broad_spawner])
