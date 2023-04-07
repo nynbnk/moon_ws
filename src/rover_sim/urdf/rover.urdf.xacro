@@ -10,11 +10,13 @@
     <xacro:include filename="$(find rover_sim)/urdf/right_wheel_group.xacro"/>
     <xacro:include filename="$(find rover_sim)/urdf/arm.xacro"/>
     <xacro:include filename="$(find rover_sim)/urdf/sensors.xacro"/>
+    <xacro:include filename="$(find rover_sim)/urdf/hooks.xacro"/>
 
 
     <xacro:left_wheel_tree /> 
     <xacro:right_wheel_tree />
     <xacro:arm />
     <xacro:sensors />
+    <xacro:hooks/>
 
 </robot>

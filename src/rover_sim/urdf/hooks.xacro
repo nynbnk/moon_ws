@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="hooks" params="">
+
+	<link name='hook_on_left'>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001" />
+            <inertia ixx="2.61666666667e-05" ixy="0.0" ixz="0.0" iyy="2.61666666667e-05" iyz="0.0" izz="3.6e-05"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+            <!-- <box size="1 1 1"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+			</geometry>
+        </collision>
+		<visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+            <!-- <box size="0.5 0.3 0.2"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+            </geometry>
+        </visual>
+	</link>
+
+    <gazebo reference="hook_on_left">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <joint name="left_hook_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="hook_on_left"/>
+        <origin xyz="0.55 -0.1000 0.08" rpy="0 0 0"/>
+      <!-- <origin xyz="0.75 -0.1000 0.08" rpy="0 0 -3.14"/> -->
+    </joint>
+
+
+    <!-- Right Hook -->
+    <link name='hook_on_right'>
+		<inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001" />
+            <inertia ixx="2.61666666667e-05" ixy="0.0" ixz="0.0" iyy="2.61666666667e-05" iyz="0.0" izz="3.6e-05"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+          <!-- <box size="1 1 1"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+			</geometry>
+        </collision>
+		<visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+            <!-- <box size="0.5 0.3 0.2"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+            </geometry>
+        </visual>
+	</link>
+
+    <gazebo reference="hook_on_right">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <joint name="right_hook_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="hook_on_right"/>
+        <origin xyz="-0.55 0.10 0.08" rpy="0 0 -3.14"/>
+    </joint>
+    <!-- Rear Hook -->
+
+    <link name='hook_on_rear'>
+		<inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001" />
+            <inertia ixx="2.61666666667e-05" ixy="0.0" ixz="0.0" iyy="2.61666666667e-05" iyz="0.0" izz="3.6e-05"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+          <!-- <box size="1 1 1"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+			</geometry>
+        </collision>
+		<visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+            <!-- <box size="0.5 0.3 0.2"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+            </geometry>
+        </visual>
+	</link>
+
+    <gazebo reference="hook_on_rear">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <joint name="rear_hook_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="hook_on_rear"/>
+        <origin xyz="0.1 1.6000 0.25" rpy="0 -0.45 1.57"/>
+    </joint>
+
+    <!-- Front Hook -->
+    <link name='hook_on_front'>
+		<inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001" />
+             <inertia ixx="2.61666666667e-05" ixy="0.0" ixz="0.0" iyy="2.61666666667e-05" iyz="0.0" izz="3.6e-05"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+          <!-- <box size="1 1 1"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+			</geometry>
+        </collision>
+		<visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+            <!-- <box size="0.5 0.3 0.2"/> -->
+				<mesh filename="file://$(find rover_sim)/meshes/hook.dae" scale="${scale_XYZ} ${scale_XYZ} ${scale_XYZ}"/>
+            </geometry>
+        </visual>
+	</link>
+
+    <gazebo reference="hook_on_front">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <joint name="front_hook_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="hook_on_front"/>
+        <origin xyz="-0.20 -.925 0.18" rpy="0 0 -1.57"/>
+    </joint>
+  </xacro:macro>
+</robot>
